@@ -15,11 +15,11 @@ jobs:
       - name: 🌊 Get the source code of this repositorie...
         uses: actions/checkout@main
 
-      - name: 🌊 Check for redundancy...
-        id: check
-        run: |
-          cd $GITHUB_WORKSPACE
-          # bash -x check.sh || echo check=0 >> "$GITHUB_OUTPUT"
+      #- name: 🌊 Check for redundancy...
+      #  id: check
+      #  run: |
+      #    cd $GITHUB_WORKSPACE
+      #    # bash -x check.sh || echo check=0 >> "$GITHUB_OUTPUT"
 
       - name: 🌊 Configuration Environment‌‌...
         if: ${{ steps.check.outputs.check != '0' }}
