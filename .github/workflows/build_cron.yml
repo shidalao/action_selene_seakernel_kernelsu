@@ -1,9 +1,10 @@
 name: CI Build - Cron
 
 on:
-  schedule:
-    - cron: '0 17 * * *' # 上海时间凌晨1点触发
-    - cron: '0 4 * * *'  # 上海时间中午12点触发
+  workflow_dispatch:
+  #schedule:
+  #  - cron: '0 17 * * *' # 上海时间凌晨1点触发
+  #  - cron: '0 4 * * *'  # 上海时间中午12点触发
 
 jobs:
   build:
