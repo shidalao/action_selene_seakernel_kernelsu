@@ -19,7 +19,7 @@ jobs:
         id: check
         run: |
           cd $GITHUB_WORKSPACE
-          bash -x check.sh || echo check=0 >> "$GITHUB_OUTPUT"
+          # bash -x check.sh || echo check=0 >> "$GITHUB_OUTPUT"
 
       - name: 🌊 Configuration Environment‌‌...
         if: ${{ steps.check.outputs.check != '0' }}
